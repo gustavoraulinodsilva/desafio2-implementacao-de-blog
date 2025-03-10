@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Multivitamin For Cat",
+            "category": "cat",
+            "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+            "price": "15,000.00",
+            "images": "src/images/MultivitaminForCat.png"
+        },
+        {
+            "id": 2,
+            "name": "Cat Food",
+            "category": "cat",
+            "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+            "price": "15,000.00",
+            "images": "src/images/CatFood.png"
+        },
+        {
+            "id": 3,
+            "name": "Dog Food",
+            "category": "dog",
+            "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+            "price": "15,000.00",
+            "images": "src/images/DogFood.png"
+        },
+        {
+            "id": 4,
+            "name": "Pet Plate",
+            "category": "dog",
+            "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+            "price": "15,000.00",
+            "images": "src/images/PetPlate.png"
+        },
+        {
+            "id": 5,
+            "name": "Bird Water",
+            "category": "bird",
+            "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+            "price": "15,000.00",
+            "images": "src/images/BirdWater.png"
+        },
+        {
+            "id": 6,
+            "name": "Dog Water",
+            "category": "dog",
+            "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
+            "price": "15,000.00",
+            "images": "src/images/DogWater.png"
+        }
+    ]
+}
