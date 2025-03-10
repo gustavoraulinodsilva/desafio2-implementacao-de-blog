@@ -409,13 +409,28 @@ body{
 @media (max-width: 901px) {
 
     .hero-section .banner .background{
-        object-position: 35% center;
+        object-position: 34% center;
         transform: translate(-50%, -50%) scale(1);
     }
 
     .hero-section .hero-content{
-        padding: 21.5rem 0 0 3.375rem;
+        padding: 35.5rem 0 0 3.375rem;
         max-width: unset;
+        gap: 3rem;
+    }
+
+    .hero-section .hero-content .hero-title{
+        max-width: 80%;
+        font-size: 3.75rem;
+        line-height: 130%;
+        font-weight: 600;
+    }
+
+    .hero-section .hero-content .hero-excerpt{
+        max-width: 80%;
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 120%;
     }
 
     .hero-section .hero-content .shop-now-btn{
