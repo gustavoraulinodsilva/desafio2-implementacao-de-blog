@@ -525,7 +525,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5rem 0;
+    padding: 5rem 0 0;
     gap: 1rem;
 }
 
@@ -548,6 +548,142 @@ body{
     border-radius: 0.8rem;
     background: linear-gradient(86.93deg, #101828 0.18%, #233250 99.39%);
     color: #fff;
+}
+
+.shop .featured-products .featured-products-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.7rem;
+    margin: 2rem auto;
+    max-width: 80%;
+}
+
+.shop .featured-products .featured-products-grid .product{
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    height: auto;
+}
+
+.shop .featured-products .featured-products-grid .product .image{
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.shop .featured-products .featured-products-grid .product .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.shop .featured-products .featured-products-grid .product .hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 24, 40, 0.54);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.shop .featured-products .featured-products-grid .product:hover .hover {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 1rem;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content{
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content .money-and-favorite{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content .money-and-favorite .money{
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 100%;
+    color: #fff;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content .content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+    color: #fff;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content .content .product-title{
+    font-weight: 700;
+    font-size: 3.4rem;
+    line-height: 100%;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content .content .product-desc{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 100%;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content .cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content .cart .count{
+    border: 1px solid;
+    border-image-source: linear-gradient(88.9deg, #243961 -2.52%, #101828 99.06%);
+    border-radius: 0.8rem;
+    background: linear-gradient(86.93deg, #101828 0.18%, #233250 99.39%);
+    padding: 1.5rem 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 100%;
+    color: #fff;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content .cart .count .plus{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content .cart .count .minus{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop .featured-products .featured-products-grid .product .hover .hover-content .cart .btn-add-to-cart{
+    border: 1px solid;
+    border-image-source: linear-gradient(88.9deg, #243961 -2.52%, #101828 99.06%);
+    border-radius: 0.8rem;
+    padding: 1.5rem 2.5rem;
+    background: linear-gradient(86.93deg, #101828 0.18%, #233250 99.39%);
+    box-shadow: 5px 4px 4px 0px #00000040;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 100%;
 }
 
 .shop .featured-products .view-more-container{
