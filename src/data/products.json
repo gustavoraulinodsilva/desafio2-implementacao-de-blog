@@ -5,18 +5,18 @@
             "name": "Multivitamin For Cat",
             "category": "cat",
             "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-            "price": "15,000.00",
+            "price": "₦15,000.00",
             "quantity": "15",
-            "images": "./src/images/MultivitaminForCat.png"
+            "image": "./src/images/MultivitaminForCat.png"
         },
         {
             "id": 2,
             "name": "Cat Food",
             "category": "cat",
             "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
-            "price": "15,000.00",
+            "price": "₦15,000.00",
             "quantity": "15",
-            "images": "./src/images/CatFood.png"
+            "image": "./src/images/CatFood.png"
         },
         {
             "id": 3,
@@ -25,7 +25,7 @@
             "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
             "price": "₦15,000.00",
             "quantity": "15",
-            "images": "./src/images/DogFood.png"
+            "image": "./src/images/DogFood.png"
         },
         {
             "id": 4,
@@ -34,7 +34,7 @@
             "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
             "price": "₦15,000.00",
             "quantity": "15",
-            "images": "./src/images/PetPlate.png"
+            "image": "./src/images/PetPlate.png"
         },
         {
             "id": 5,
@@ -43,7 +43,7 @@
             "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
             "price": "₦15,000.00",
             "quantity": "15",
-            "images": "./src/images/BirdWater.png"
+            "image": "./src/images/BirdWater.png"
         },
         {
             "id": 6,
@@ -52,7 +52,7 @@
             "desc": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam.",
             "price": "₦15,000.00",
             "quantity": "15",
-            "images": "./src/images/DogWater.png"
+            "image": "./src/images/DogWater.png"
         }
     ]
 }
