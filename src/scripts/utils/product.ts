@@ -97,6 +97,26 @@ export function setupSearch(){
     });
 }
 
+export function openSearch(){
+    const searchContainer = document.querySelector('.search-container') as HTMLElement;
+    const input = searchContainer.querySelector('.custom-search') as HTMLElement;
+
+    if(!searchContainer || !input){
+        return;
+    }
+
+    searchContainer.addEventListener('click', () => {
+        searchContainer.classList.add('active');
+        input.focus();
+    });
+
+    document.addEventListener('click', (e) => {
+        if(!searchContainer.contains(e.target as Node)){
+            searchContainer.classList.remove('active');
+        }
+    });
+}
+
 export function getRandomProducts(products: Product[], count: number): Product[] {
     let candidates = products.filter(p => !AppState.previousRandomProducts.includes(p));
     

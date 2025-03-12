@@ -1,12 +1,13 @@
 import { AppState } from "./interfaces/product.js";
 import { closeMenu, closeOnOverlayClick, openMenu, setupDropdowns } from "./utils/menu.js";
-import { fetchProducts, renderProducts, setupCategoryFilters, setupSearch } from "./utils/product.js";
+import { fetchProducts, openSearch, renderProducts, setupCategoryFilters, setupSearch } from "./utils/product.js";
 
 async function init() {
     openMenu();
     closeMenu();
     closeOnOverlayClick();
     setupDropdowns();
+    openSearch();
 
     try{
         AppState.allProducts = await fetchProducts();
