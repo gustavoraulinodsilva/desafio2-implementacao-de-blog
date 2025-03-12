@@ -1,13 +1,17 @@
-import {AppState, Product} from "../interfaces/product.js";
+import {AppState, Product, shuffleArray} from "../interfaces/product.js";
 
 export async function fetchProducts(): Promise<Product[]> {
     const response = await fetch('./src/data/products.json');
     const data = await response.json();
 
-    return data.products.map((p: any) => ({
+    const allProducts = data.products.map((p: any) => ({
         ...p,
         quantity: parseInt(p.quantity)
     }));
+
+    AppState.allProducts = getRandomProducts(allProducts, 3);
+
+    return allProducts;
 }
 
 export function renderProducts(products: Product[]){
@@ -89,6 +93,19 @@ export function setupSearch(){
     });
 }
 
+export function getRandomProducts(products: Product[], count: number): Product[] {
+    let candidates = products.filter(p => !AppState.previousRandomProducts.includes(p));
+    
+    if (candidates.length < count) {
+        AppState.previousRandomProducts = [];
+        candidates = products;
+    }
+
+    const shuffled = shuffleArray(candidates).slice(0, count);
+    AppState.previousRandomProducts = shuffled;
+    return shuffled;
+}
+
 function applyFilters(){
     let filtered = [...AppState.allProducts];
 
@@ -104,6 +121,10 @@ function applyFilters(){
 
     if(AppState.currentSearchTerm){
         filtered = filtered.filter(p => p.name.toLowerCase().includes(AppState.currentSearchTerm) || p.desc.toLowerCase().includes(AppState.currentSearchTerm));
+    }
+
+    if(AppState.currentFilter === 'Random'){
+        filtered = getRandomProducts(filtered,3);
     }
 
     renderProducts(filtered);
