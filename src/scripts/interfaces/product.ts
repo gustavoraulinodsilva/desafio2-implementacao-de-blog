@@ -9,6 +9,7 @@ export interface Product {
 }
 
 export namespace AppState{
+    export let originalProducts: Product[] = [];
     export let allProducts: Product[] = [];
     export let previousRandomProducts: Product[] = [];
     export let currentFilter = 'Random';
