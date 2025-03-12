@@ -11,7 +11,9 @@ export async function fetchProducts(): Promise<Product[]> {
 
     AppState.originalProducts = allProducts;
 
-    allProducts = shuffleArray(allProducts).slice(0,3);
+    const itemsToShow = window.innerWidth < 901 ? 2 : 3;
+
+    allProducts = shuffleArray(allProducts).slice(0,itemsToShow);
 
     AppState.allProducts = allProducts;
 
@@ -89,11 +91,14 @@ export function setupCategoryFilters(){
 }
 
 export function setupSearch(){
-    const searchInput  = document.querySelector('.custom-search') as HTMLInputElement;
+    const searchInputs  = document.querySelectorAll('.custom-search');
 
-    searchInput.addEventListener('input', () => {
-        AppState.currentSearchTerm = searchInput.value.toLowerCase(); 
-        applyFilters();
+    searchInputs.forEach(input => {
+        const searchInput = input as HTMLInputElement;
+        searchInput.addEventListener('input', () => {
+            AppState.currentSearchTerm = searchInput.value.toLowerCase();
+            applyFilters();
+        });
     });
 }
 
@@ -133,20 +138,26 @@ export function getRandomProducts(products: Product[], count: number): Product[]
 function applyFilters(){
     let filtered = [...AppState.originalProducts];
 
+    if(AppState.currentSearchTerm){
+        filtered = filtered.filter(p => p.name.toLowerCase().includes(AppState.currentSearchTerm) || p.desc.toLowerCase().includes(AppState.currentSearchTerm));
+    }
+
     if(AppState.currentFilter === 'Random' || AppState.currentFilter === ''){
         filtered = getRandomProducts(filtered,3);
+
+        if(!AppState.currentSearchTerm){
+            filtered = getRandomProducts(filtered, window.innerWidth < 901 ? 2 : 3);
+        }
+
     }else{
         const filterMap: {[key: string]: string} = {
             'Cat' : 'cat',
             'Dogs' : 'dog',
-            'Birds' : 'bird'
+            'Birds' : 'bird',
+            'Fish' : 'fish'
         };
         const category = filterMap[AppState.currentFilter] || AppState.currentFilter.toLowerCase();
         filtered = filtered.filter(p => p.category.toLowerCase() === category);
-    }
-
-    if(AppState.currentSearchTerm){
-        filtered = filtered.filter(p => p.name.toLowerCase().includes(AppState.currentSearchTerm) || p.desc.toLowerCase().includes(AppState.currentSearchTerm));
     }
 
     renderProducts(filtered);
