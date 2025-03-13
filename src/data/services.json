@@ -4,35 +4,35 @@
             "id": 1,
             "title": "Grooming",
             "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam. Dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
-            "btn-label": "Learn More",
+            "btnlabel": "Learn More",
             "image": "./src/images/Grooming.png"
         },
         {
             "id": 2,
             "title": "Boarding",
             "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam. Dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
-            "btn-label": "Learn More",
+            "btnlabel": "Learn More",
             "image": "./src/images/Boarding.png"
         },
         {
             "id": 3,
             "title": "Veterinary",
             "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam. Dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
-            "btn-label": "Learn More",
+            "btnlabel": "Learn More",
             "image": "./src/images/Veterinary.png"
         },
         {
             "id": 4,
             "title": "Training",
             "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam. Dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
-            "btn-label": "Learn More",
+            "btnlabel": "Learn More",
             "image": "./src/images/Training.png"
         },
         {
             "id": 5,
             "title": "Adoption",
             "description": "Lorem ipsum dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam. Dolor sit amet consectetur. Vitae donec pellentesque ut eget tempor egestas diam. Donec pellentesque ut eget tempor egestas diam.",
-            "btn-label": "Learn More",
+            "btnlabel": "Learn More",
             "image": "./src/images/Adoption.png"
         }
     ]
