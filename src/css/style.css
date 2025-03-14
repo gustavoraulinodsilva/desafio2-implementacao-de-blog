@@ -1007,4 +1007,66 @@ body{
     border: 1px solid #fff;
     transition: .3s all ease;
 }
+
+@media(max-width: 901px){
+    .service {
+        padding: 4rem 2rem;
+    }
+
+    .service .services-grid {
+        border: 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "item1 item2"
+            "item3 item4"
+            "item5 item5";
+        gap: 1.5rem;
+        max-width: 100%;
+        padding: 2rem 0;
+    }
+
+    .service .service-title-section {
+        padding: 0 0 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .service .service-title-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .service .services-grid .service-item .name-front,
+    .service .services-grid .service-item .card-back .card-back-content .name {
+        font-size: 1.5rem;
+    }
+
+    .service .services-grid .service-item .card-back .card-back-content .excerpt{
+        font-size: 1.5rem;
+    }
+
+    .service .services-grid .service-item:nth-child(5) {
+        grid-column: 1 / -1;
+    }
+
+    .service .services-grid .service-item {
+        aspect-ratio: 1/1;
+    }
+
+    .service .services-grid .service-item:nth-child(5) {
+        aspect-ratio: 2/1;
+    }
+
+    .service .services-grid .service-item .card-back .card-back-content .btn-learn-more{
+        padding: 1rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .service .services-grid .service-item .card-back .card-back-content .btn-learn-more:hover {
+        border: 1px solid transparent;
+        background: linear-gradient(86.93deg, #101828 0.18%, #233250 99.39%);
+        box-shadow: 5px 4px 4px 0px #00000040;
+        transition: none;
+    }
+} 
+
 /* SERVICES SECTION */
