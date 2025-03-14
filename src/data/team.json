@@ -1,0 +1,40 @@
+{
+    "team": [
+        {
+            "id": 1,
+            "name": "Dr. Olivia Rhye",
+            "position": "Senior Veterinarian",
+            "twitter": "https://x.com/?lang=pt",
+            "linkedin": "https://br.linkedin.com/",
+            "site": "https://www.google.com.br/?hl=pt-BR",
+            "image": "../images/positionone.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Phoenix Baker",
+            "position": "Asst. Veterinarian",
+            "twitter": "https://x.com/?lang=pt",
+            "linkedin": "https://br.linkedin.com/",
+            "site": "https://www.google.com.br/?hl=pt-BR",
+            "image": "../images/positiontwo.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Lana Steiner",
+            "position": "Resident Veterinarian",
+            "twitter": "https://x.com/?lang=pt",
+            "linkedin": "https://br.linkedin.com/",
+            "site": "https://www.google.com.br/?hl=pt-BR",
+            "image": "../images/positionthree.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Demi Wilkinson",
+            "position": "Intern Veterinarian",
+            "twitter": "https://x.com/?lang=pt",
+            "linkedin": "https://br.linkedin.com/",
+            "site": "https://www.google.com.br/?hl=pt-BR",
+            "image": "../images/positionfour.jpeg"
+        }
+    ]
+}

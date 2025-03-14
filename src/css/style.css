@@ -1188,3 +1188,25 @@ body{
     }
 }
 /* ABOUT US SECTION */
+
+/* OUR TEAM SECTION */
+.our-team{
+    position: relative;
+    padding: 7rem;
+}
+
+.our-team .our-team-title-section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.our-team .our-team-title-section h2{
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 100%;
+}
+/* OUR TEAM SECTION */
