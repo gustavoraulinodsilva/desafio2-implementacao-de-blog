@@ -1451,3 +1451,127 @@ body{
     }
 }
 /* BLOG SECTION */
+
+/* CONTACT SECTION */
+.contact{
+    position: relative;
+    background: #101828;
+    padding: 7rem 4rem;
+}
+
+.contact .contact-section-title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 0 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .contact-section-title h2{
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 100%;
+    color: #fff;
+}
+
+.contact .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.contact .contact-content .contact-left{
+    width: 55%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 1.6rem;
+}
+
+.contact .contact-content .contact-left .form{
+    padding: 4rem 3.2rem;
+}
+
+.contact .contact-content .contact-left .form .row{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact .contact-content .contact-left .form .row .col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-content .contact-left .form label{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact .contact-content .contact-left .form input, .form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.contact .contact-content .contact-left .form .row .checkbox-input{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .contact-content .contact-left .form .row .checkbox-input label{
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #667085;
+}
+
+.contact .contact-content .contact-left .form .row .checkbox-input label a{
+    color: #667085;
+}
+
+.contact .contact-content .contact-left .form .btn-submit-form {
+    width: 100%;
+    border: 1px solid;
+    border-image-source: linear-gradient(88.9deg, #243961 -2.52%, #101828 99.06%);
+    background: linear-gradient(86.93deg, #101828 0.18%, #233250 99.39%);
+    color: white;
+    padding: 2rem 2.5rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.contact .contact-content .contact-left .form .btn-submit-form:hover {
+    transform: translateY(-5px);
+    transition: 0.3s all ease;
+}
+
+
+.contact .contact-content .contact-right{
+    width: 45%;
+    padding:0 3.2rem;
+}
+
+.contact .contact-content .contact-right .contact-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+/* CONTACT SECTION */
