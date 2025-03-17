@@ -1,7 +1,7 @@
 import { Service } from "../interfaces/service.js";
 
 export async function fetchServices(): Promise<Service[]>{
-    const response = await fetch('src/data/services.json');
+    const response = await fetch('./src/data/services.json');
     const data = await response.json();
     return data.services;
 }

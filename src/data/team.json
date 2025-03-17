@@ -7,7 +7,7 @@
             "twitter": "https://x.com/?lang=pt",
             "linkedin": "https://br.linkedin.com/",
             "site": "https://www.google.com.br/?hl=pt-BR",
-            "image": "../images/positionone.jpeg"
+            "image": "./src/images/positionone.jpeg"
         },
         {
             "id": 2,
@@ -16,7 +16,7 @@
             "twitter": "https://x.com/?lang=pt",
             "linkedin": "https://br.linkedin.com/",
             "site": "https://www.google.com.br/?hl=pt-BR",
-            "image": "../images/positiontwo.jpeg"
+            "image": "./src/images/positiontwo.jpeg"
         },
         {
             "id": 3,
@@ -25,7 +25,7 @@
             "twitter": "https://x.com/?lang=pt",
             "linkedin": "https://br.linkedin.com/",
             "site": "https://www.google.com.br/?hl=pt-BR",
-            "image": "../images/positionthree.jpeg"
+            "image": "./src/images/positionthree.jpeg"
         },
         {
             "id": 4,
@@ -34,7 +34,7 @@
             "twitter": "https://x.com/?lang=pt",
             "linkedin": "https://br.linkedin.com/",
             "site": "https://www.google.com.br/?hl=pt-BR",
-            "image": "../images/positionfour.jpeg"
+            "image": "./src/images/positionfour.jpeg"
         }
     ]
 }

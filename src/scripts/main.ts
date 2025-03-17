@@ -2,6 +2,7 @@ import { AppState } from "./interfaces/product.js";
 import { closeMenu, closeOnOverlayClick, openMenu, setupDropdowns } from "./utils/menu.js";
 import { fetchProducts, openSearch, renderProducts, setupCategoryFilters, setupSearch } from "./utils/product.js";
 import { fetchServices, renderServices } from "./utils/services.js";
+import { fetchTeam, renderTeam } from "./utils/team.js";
 
 async function init() {
     openMenu();
@@ -11,6 +12,7 @@ async function init() {
     openSearch();
     initializeServices();
     initializeProducts();
+    initializeTeam();
 }
 
 async function initializeProducts() {
@@ -30,6 +32,15 @@ async function initializeServices() {
         renderServices(services);
     } catch (error) {
         console.error('Error loading services:', error);
+    }
+}
+
+async function initializeTeam(){
+    try{
+        const team = await fetchTeam();
+        renderTeam(team);
+    } catch(error){
+        console.error('Error loading team: ', error);
     }
 }
 
