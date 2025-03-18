@@ -1,4 +1,5 @@
 import { AppState } from "./interfaces/product.js";
+import { formValidation } from "./utils/contact.js";
 import { closeMenu, closeOnOverlayClick, openMenu, setupDropdowns } from "./utils/menu.js";
 import { fetchProducts, openSearch, renderProducts, setupCategoryFilters, setupSearch } from "./utils/product.js";
 import { fetchServices, renderServices } from "./utils/services.js";
@@ -13,6 +14,7 @@ async function init() {
     initializeServices();
     initializeProducts();
     initializeTeam();
+    formValidation();
 }
 
 async function initializeProducts() {

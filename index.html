@@ -253,33 +253,40 @@
         </div>
         <div class="contact-content">
             <div class="contact-left">
-                <form class="form">
+                <form class="form" id="contact-form" novalidate>
                     <div class="row">
                         <div class="col">
                             <label for="first-name">First name</label>
-                            <input type="text" id="first-name" placeholder="First name">
+                            <input type="text" id="first-name" placeholder="First name" required>
+                            <span class="error" id="error-first-name"></span>
                         </div>
                         <div class="col">
                             <label for="last-name">Last name</label>
-                            <input type="text" id="last-name" placeholder="Last name">
+                            <input type="text" id="last-name" placeholder="Last name" required>
+                            <span class="error" id="error-last-name"></span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col full-width">
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="you@company.com">
+                            <input type="email" id="email" placeholder="you@company.com" required>
+                            <span class="error" id="error-email"></span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col full-width">
                             <label for="message">Message</label>
-                            <textarea id="message"></textarea>
+                            <textarea id="message" required></textarea>
+                            <span class="error" id="error-message"></span>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="checkbox-input">
-                            <input type="checkbox" id="privacy">
-                            <label for="privacy">You agree to our friendly <a href="#">privacy policy</a>.</label>
+                        <div class="col full-width">
+                            <div class="checkbox-input">
+                                <input type="checkbox" id="privacy" required>
+                                <label for="privacy">You agree to our friendly <a href="#">privacy policy</a>.</label>
+                            </div>
+                            <span class="error" id="error-privacy"></span>
                         </div>
                     </div>
                     <button type="submit" class="btn-submit-form">Send message</button>

@@ -1484,7 +1484,8 @@ body{
 }
 
 .contact .contact-content .contact-left{
-    width: 55%;
+    /* width: 55%; */
+    margin: 0 auto;
     background-color: #fff;
     border: 1px solid #fff;
     border-radius: 1.6rem;
@@ -1506,6 +1507,13 @@ body{
     flex-direction: column;
 }
 
+.contact .contact-content .contact-left .form .row .col .error{
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+    margin-top: 4px;
+}
+
 .contact .contact-content .contact-left .form label{
     font-weight: 500;
     font-size: 1.4rem;
@@ -1524,6 +1532,7 @@ body{
 
 .contact .contact-content .contact-left .form textarea{
     min-height: 200px;
+    resize: none;
 }
 
 .full-width {
@@ -1535,6 +1544,13 @@ body{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.contact .contact-content .contact-left .form .row .col .checkbox-input .error{
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+    margin-top: 4px;
 }
 
 .contact .contact-content .contact-left .form .row .checkbox-input input[type="checkbox"] {
