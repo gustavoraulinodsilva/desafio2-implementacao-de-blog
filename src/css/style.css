@@ -1478,7 +1478,7 @@ body{
 .contact .contact-content{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 0 3.2rem;
 }
@@ -1496,8 +1496,8 @@ body{
 
 .contact .contact-content .contact-left .form .row{
     display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+    gap: 3.2rem;
+    margin-bottom: 3.2rem;
 }
 
 .contact .contact-content .contact-left .form .row .col{
@@ -1514,10 +1514,16 @@ body{
 }
 
 .contact .contact-content .contact-left .form input, .form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 1rem;
+    border: 1px solid #D0D5DD;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+}
+
+.contact .contact-content .contact-left .form textarea{
+    min-height: 200px;
 }
 
 .full-width {
@@ -1525,9 +1531,20 @@ body{
 }
 
 .contact .contact-content .contact-left .form .row .checkbox-input{
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
+}
+
+.contact .contact-content .contact-left .form .row .checkbox-input input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .contact .contact-content .contact-left .form .row .checkbox-input label{
@@ -1536,6 +1553,49 @@ body{
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: #667085;
+    padding-left: 28px;
+    position: relative;
+    cursor: pointer;
+}
+
+.contact .contact-content .contact-left .form .row .checkbox-input label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #D0D5DD;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    transition: all 0.2s ease;
+}
+
+.contact .contact-content .contact-left .form .row .checkbox-input label::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transform: translateY(-70%) rotate(-45deg);
+    transition: all 0.2s ease;
+}
+
+.contact .contact-content .contact-left .form .row .checkbox-input input[type="checkbox"]:checked + label::before {
+    background-color: #233250;
+    border-color: #233250;
+}
+
+.contact .contact-content .contact-left .form .row .checkbox-input input[type="checkbox"]:checked + label::after {
+    border-color: #FFFFFF;
+}
+
+.contact .contact-content .contact-left .form .row .checkbox-input label:hover::before {
+    border-color: #233250;
 }
 
 .contact .contact-content .contact-left .form .row .checkbox-input label a{
@@ -1567,11 +1627,45 @@ body{
 .contact .contact-content .contact-right{
     width: 45%;
     padding:0 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact .contact-content .contact-right .contact-grid{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 3rem;
+    gap: 3.2rem;
+}
+
+
+.contact .contact-content .contact-right .contact-grid .contact-item h5{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+.contact .contact-content .contact-right .contact-grid .contact-item p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #fff;
+    opacity: 0.4;
+}
+
+.contact .contact-content .contact-right .contact-grid .contact-item a{
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s all ease;
+}
+
+.contact .contact-content .contact-right .contact-grid .contact-item a:hover{
+    text-decoration: underline;
+    transition: .3s all ease;
+    cursor: pointer;
 }
 /* CONTACT SECTION */
