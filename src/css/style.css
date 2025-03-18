@@ -1654,6 +1654,13 @@ body{
     gap: 3.2rem;
 }
 
+.contact .contact-content .contact-right .contact-grid .contact-item{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
 
 .contact .contact-content .contact-right .contact-grid .contact-item h5{
     font-weight: 600;
@@ -1683,5 +1690,58 @@ body{
     text-decoration: underline;
     transition: .3s all ease;
     cursor: pointer;
+}
+
+@media (max-width: 901px) {
+    .contact{
+        padding: 5rem 2rem;
+    }
+
+    .contact .contact-content{
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+        gap: 5.25rem;
+    }
+
+    .contact .contact-content .contact-left{
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact .contact-content .contact-left .form{
+        padding: 3.275rem 2.62rem;
+    }
+
+    .contact .contact-content .contact-left .form .row{
+        gap: 2.62rem;
+        margin-bottom: 2.62rem;
+        flex-wrap: nowrap;
+    }
+
+    .contact .contact-content .contact-left .form .row .col{
+        flex: 1;
+        min-width: 0;
+    }
+
+    .contact .contact-content .contact-right{
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact .contact-content .contact-right .contact-grid .contact-item h5{
+        font-size: 1.6375rem;
+        line-height: 2.45625rem;
+    }
+
+    .contact .contact-content .contact-right .contact-grid .contact-item p{
+        font-size: 1.25rem;
+        line-height: 1.965rem;
+    }
+
+    .contact .contact-content .contact-right .contact-grid .contact-item a{
+        font-size: 1.31rem;
+        line-height: 1.965rem;
+    }
 }
 /* CONTACT SECTION */
