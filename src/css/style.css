@@ -1798,6 +1798,13 @@ body{
     flex-direction: column;
 }
 
+.footer .footer-top .send-newsletter .form .row .col .error{
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+    margin-top: 4px;
+}
+
 .footer .footer-top .send-newsletter .form .row .col input{
     padding: 1rem;
     border: 1px solid #D0D5DD;

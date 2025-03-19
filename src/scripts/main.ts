@@ -1,6 +1,7 @@
 import { AppState } from "./interfaces/product.js";
 import { formValidation } from "./utils/contact.js";
 import { closeMenu, closeOnOverlayClick, openMenu, setupDropdowns } from "./utils/menu.js";
+import { newsletterValidation } from "./utils/newsletter.js";
 import { fetchProducts, openSearch, renderProducts, setupCategoryFilters, setupSearch } from "./utils/product.js";
 import { fetchServices, renderServices } from "./utils/services.js";
 import { fetchTeam, renderTeam } from "./utils/team.js";
@@ -15,6 +16,7 @@ async function init() {
     initializeProducts();
     initializeTeam();
     formValidation();
+    newsletterValidation();
 }
 
 async function initializeProducts() {
