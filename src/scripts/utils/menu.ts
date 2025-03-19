@@ -66,3 +66,19 @@ export function setupDropdowns(){
         });
     });
 }
+
+export function changeColorHeader(){
+    const header = document.querySelector('.header') as HTMLElement;
+
+    if(!header){
+        return;
+    }
+
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 100){
+            header.classList.add("active");
+        }else{
+            header.classList.remove("active");
+        }
+    });
+}

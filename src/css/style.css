@@ -21,13 +21,18 @@ body{
 /* --------------------------------------------------------- */
 /* HEADER */
 .header{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 8rem;
     padding: 0 10rem;
     z-index: 10;
+}
+
+.header.active{
+    background-color: #000;
+    transition: .3s all ease;
 }
 
 .header .logo-mobile{
