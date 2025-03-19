@@ -1783,7 +1783,7 @@ body{
 
 .footer .footer-top .send-newsletter{
     width: 100%;
-    max-width: 480px;
+    max-width: 500px;
 }
 
 .footer .footer-top .send-newsletter .form .row{
@@ -1801,7 +1801,7 @@ body{
 .footer .footer-top .send-newsletter .form .row .col input{
     padding: 1rem;
     border: 1px solid #D0D5DD;
-    background-color: #FFFFFF;
+    background-color: #DEDEDE;
     box-shadow: 0px 1px 2px 0px #1018280D;
     border-radius: 0.8rem;
     font-size: 1.6rem;
@@ -1814,7 +1814,7 @@ body{
     padding: 1.2rem 2rem;
     border-radius: 0.8rem;
     transition: all 0.3s;
-    width: 60%;
+    width: 70%;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -1907,9 +1907,11 @@ hr{
 }
 
 .footer-bottom .copyright p {
-    color: #EAECF0;
+    color: #CECECE;
     opacity: 0.75;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
 }
 
 .footer-bottom .social-media {
@@ -1920,4 +1922,68 @@ hr{
 .footer-bottom .social-media a:hover svg path {
     fill: #FFFFFF;
 }
+
+@media(max-width: 901px){
+    .footer .footer-top{
+        flex-direction: column;
+        padding: 5rem 2rem;
+        gap: 4rem;
+    }
+
+    .footer .footer-top .texts p{
+        font-size: 1.625rem;
+        line-height: 110%;
+    }
+
+    .footer .footer-top .send-newsletter{
+        max-width: unset;
+    }
+
+    .footer .footer-top .send-newsletter .form .row{
+        flex-direction: column;
+    }
+
+    .footer .footer-top .send-newsletter .form .row .col .btn-newsletter-submit{
+        width: 100%;
+    }
+
+    .footer .footer-middle{
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+        padding: 5rem 2rem;
+    }
+
+    .footer .footer-middle .links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+
+        
+    .footer .footer-middle .links-grid .link-item p {
+        font-size: 1.75rem;
+    }
+
+    .footer .footer-middle .links-grid .link-item ul li a {
+        font-size: 2rem;
+    }
+
+    .footer-bottom {
+        max-width: unset;
+        width: 100%;
+        padding: 2rem;
+        flex-direction: column;
+        justify-content: unset;
+        gap: 1.25rem;
+    }
+
+    .footer-bottom .copyright p{
+        width: 100%;
+    }
+
+    hr{
+        max-width: 90%;
+    }
+}
+
 /* FOOTER SECTION */
